@@ -1,0 +1,17 @@
+{
+  "name": "bitskins",
+  "version": "1.0.0",
+  "description": "Wrapper for the Bitskins API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "notp": "^2.0.3",
+    "pusher-client": "^1.1.0",
+    "request": "^2.81.0",
+    "thirty-two": "^1.0.2"
+  }
+}
