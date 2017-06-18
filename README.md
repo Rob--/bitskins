@@ -37,9 +37,9 @@ For more information, visit the [Bitskins API docs](https://bitskins.com/api).
          // ...
      })
      .catch((error) => {
-         // this will the response from the Bitskins API call if the actual
-         // request was successful, or it will be the error from the `request`
-         // module if the actual request failed.
+         // this will be the response from the Bitskins API call if the actual
+         // request was successful but the API returned a status that was not "success",
+         // or it will be the error from the `request` module if the actual request failed.
      });
  ```
 
