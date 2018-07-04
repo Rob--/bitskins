@@ -134,6 +134,15 @@ Allows you to change the price on an item currently on sale.
 Refer to the `buyItem` reference above to see how to see the two different
 ways to format the parameters.
 
+### delistItem(item_ids) | [doc ref](https://bitskins.com/api#delist_item)
+Allows you to delist an active sale item.
+
+### relistItem(ids[, prices]) | [doc ref](https://bitskins.com/api#relist_item)
+Allows you to re-list a delisted/purchased item for sale. Re-listed items can be sold instantly, where applicable.
+
+Refer to the `buyItem` reference above to see how to see the two different
+ways to format the parameters.
+
 ### withdrawItem(item_ids) | [doc ref](https://bitskins.com/api#withdraw_item)
 Allows you to delist an active sale item and/or re-attempt an item pending withdrawal.
 
@@ -164,6 +173,11 @@ Allows you to retrieve information about items requested/sent in a given trade f
 
 - trade_token: the trade token in the message of the Steam trade offer
 - trade_id the trade ID in the message of the Steam trade offer
+
+### getRecentTradeOffers(active_only) | [doc ref](https://bitskins.com/api#get_recent_trade_offers)
+Allows you to retrieve information about 50 most recent trade offers sent by BitSkins. Response contains 'steam_trade_offer_state,' which is '2' if the only is currently active.
+
+- active_only: boolean that determines if the returned data should only contain active tradeoffers. (default: true)
 
 ### getRecentSaleInfo(market_hash_name[, page]) | [doc ref](https://bitskins.com/api#get_sales_info)
 Allows you to retrieve upto 5 pages worth of recent sale data for a given item name. These are the recent sales for the given item at BitSkins, in descending order.
